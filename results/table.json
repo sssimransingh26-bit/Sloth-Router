@@ -1,0 +1,18 @@
+{
+  "split": "test",
+  "threshold": 0.72,
+  "systems": [
+    {
+      "system": "A",
+      "route_acc": 0.6416666666666667,
+      "dangerous_error": 0.041666666666666664,
+      "dangerous_error_ci95": [
+        0.02837953071156377,
+        0.06078557483929593
+      ],
+      "answer_correct": 0.2633333333333333,
+      "cost_per_1k_usd": 0.4088637,
+      "latency_ms_mean": 3193.101701999161
+    }
+  ]
+}

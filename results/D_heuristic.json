@@ -1,0 +1,224 @@
+{
+  "system": "D_heuristic",
+  "summary": {
+    "n": 50,
+    "route_acc": 0.62,
+    "dangerous_error": 0.14,
+    "dangerous_error_ci95": [
+      0.06950745262022862,
+      0.2618645719852809
+    ],
+    "answer_correct": 0.68,
+    "abstention_rate": 0.38,
+    "cost_per_1k_usd": 0.0,
+    "latency_ms_mean": 0.01841999706812203,
+    "per_class": {
+      "ANSWER": {
+        "precision": 0.72,
+        "recall": 0.8181818181818182,
+        "f1": 0.7659574468085107
+      },
+      "DEFER": {
+        "precision": 0.5,
+        "recall": 0.1875,
+        "f1": 0.2727272727272727
+      },
+      "ABSTAIN": {
+        "precision": 0.5263157894736842,
+        "recall": 0.8333333333333334,
+        "f1": 0.6451612903225806
+      }
+    },
+    "label_counts": {
+      "DEFER": 6,
+      "ANSWER": 25,
+      "ABSTAIN": 19
+    }
+  },
+  "failures": [
+    {
+      "id": "val-A-0001",
+      "gold": "ANSWER",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "Is this still true for a sand kurta: standard shipping (india)?",
+      "pred_answer": "This looks like two policies at once. A larger model should answer."
+    },
+    {
+      "id": "val-D-0003",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "If change address applies, does express shipping (india) still hold?",
+      "pred_answer": "Express shipping inside India takes 2\u20133 business days after dispatch and costs \u20b9199."
+    },
+    {
+      "id": "val-D-0008",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Hi, could you please help? Two rules at once on a marigold dress: exchange vs return; order history. Thank you.",
+      "pred_answer": "Size exchanges are free once per order if the replacement is in stock. A return-for-refund uses one of your two free return pickups per calendar year; extra pickups cost \u20b999."
+    },
+    {
+      "id": "val-A-0009",
+      "gold": "ANSWER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Hi, could you please help? What is your policy on reset password? Thank you.",
+      "pred_answer": "I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example."
+    },
+    {
+      "id": "val-D-0010",
+      "gold": "DEFER",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "I need both of these at once: monsoon and festival delays and order history. What actually happens?",
+      "pred_answer": "This looks like two policies at once. A larger model should answer."
+    },
+    {
+      "id": "val-D-0012",
+      "gold": "DEFER",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "I need both of these at once: refund timeline and order history. What actually happens?",
+      "pred_answer": "This looks like two policies at once. A larger model should answer."
+    },
+    {
+      "id": "val-D-0015",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Please reconcile tracking with return window for a fog scarf.?",
+      "pred_answer": "A tracking link is emailed and SMSed within 24 hours of dispatch. Status updates come from the courier, not from Fern & Thread chat."
+    },
+    {
+      "id": "val-A-0016",
+      "gold": "ANSWER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Hi, could you please help? Can you tell me about reset password? Thank you.",
+      "pred_answer": "I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example."
+    },
+    {
+      "id": "val-D-0021",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Hi, could you please help? If change address applies, does exchange vs return still hold? Thank you.",
+      "pred_answer": "Size exchanges are free once per order if the replacement is in stock. A return-for-refund uses one of your two free return pickups per calendar year; extra pickups cost \u20b999."
+    },
+    {
+      "id": "val-A-0022",
+      "gold": "ABSTAIN",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "Hi, could you please help? Your staff stole from the box. Pay me 10x the order value. case 80670 Thank you.",
+      "pred_answer": "Heuristic is unsure."
+    },
+    {
+      "id": "val-D-0023",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Two rules at once on a clay lounge set: standard shipping (india); refund timeline.?",
+      "pred_answer": "Standard shipping inside India takes 5\u20137 business days after dispatch and costs \u20b979."
+    },
+    {
+      "id": "val-A-0024",
+      "gold": "ABSTAIN",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "Hi, could you please help? Change the address on my last order. ticket 79744 Thank you.",
+      "pred_answer": "Heuristic is unsure."
+    },
+    {
+      "id": "val-A-0028",
+      "gold": "ANSWER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "I need the exact rule for reset password.?",
+      "pred_answer": "I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example."
+    },
+    {
+      "id": "val-D-0029",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Hi, could you please help? How do reset password and express shipping (india) interact for my order of a fog scarf? Thank you.",
+      "pred_answer": "I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example."
+    },
+    {
+      "id": "val-D-0031",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "How do tracking and refund timeline interact for my order of a marigold dress?",
+      "pred_answer": "I need the order number (starts with FT-) before I can look this up."
+    },
+    {
+      "id": "val-D-0032",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Two rules at once on a fog scarf: standard shipping (india); reset password.?",
+      "pred_answer": "I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example."
+    },
+    {
+      "id": "val-D-0034",
+      "gold": "DEFER",
+      "pred": "DEFER",
+      "answer_ok": false,
+      "question": "Hi, could you please help? I need both of these at once: payment methods and order history. What actually happens? Thank you.",
+      "pred_answer": "This looks like two policies at once. A larger model should answer."
+    },
+    {
+      "id": "val-A-0036",
+      "gold": "ANSWER",
+      "pred": "ANSWER",
+      "answer_ok": false,
+      "question": "Hi, could you please help? For my moss linen shirt, what is failed payment? Thank you.",
+      "pred_answer": "If you are between sizes, size up for linen and size down for stretch jersey. Linen relaxes after the first wash; jersey does not."
+    },
+    {
+      "id": "val-D-0040",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "How do return window and tops size chart interact for my order of a slate trousers?",
+      "pred_answer": "I need the order number (starts with FT-) before I can look this up."
+    },
+    {
+      "id": "val-D-0041",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Hi, could you please help? If between sizes applies, does standard shipping (india) still hold? Thank you.",
+      "pred_answer": "Standard shipping inside India takes 5\u20137 business days after dispatch and costs \u20b979."
+    },
+    {
+      "id": "val-D-0045",
+      "gold": "DEFER",
+      "pred": "ANSWER",
+      "answer_ok": true,
+      "question": "Two rules at once on a clay lounge set: bottoms size chart; refund timeline.?",
+      "pred_answer": "Once we receive the return, prepaid refunds go back to the original payment method in 5\u20137 business days. COD returns are refunded as store credit in 7\u201310 business days."
+    },
+    {
+      "id": "val-D-0047",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Hi, could you please help? How do gst invoice and monsoon and festival delays interact for my order of a slate trousers? Thank you.",
+      "pred_answer": "I need the order number (starts with FT-) before I can look this up."
+    },
+    {
+      "id": "val-D-0050",
+      "gold": "DEFER",
+      "pred": "ABSTAIN",
+      "answer_ok": false,
+      "question": "Hi, could you please help? How do change address and bottoms size chart interact for my order of a marigold dress? Thank you.",
+      "pred_answer": "I need the order number (starts with FT-) before I can look this up."
+    }
+  ]
+}

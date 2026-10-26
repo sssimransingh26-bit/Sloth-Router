@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: sloth-router
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: TINKER_API_KEY
+        sync: false
+      - key: TINKER_ROUTER_PATH
+        sync: false
+      - key: ANSWER_THRESHOLD
+        value: "0.72"
+      - key: DAILY_SPEND_CAP_USD
+        value: "2.00"
+      - key: PYTHON_VERSION
+        value: "3.12.7"

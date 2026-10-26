@@ -1,0 +1,19 @@
+
+{
+  "split": "val",
+  "threshold": 0.72,
+  "systems": [
+    {
+      "system": "D_heuristic",
+      "route_acc": 0.62,
+      "dangerous_error": 0.14,
+      "dangerous_error_ci95": [
+        0.06950745262022862,
+        0.2618645719852809
+      ],
+      "answer_correct": 0.68,
+      "cost_per_1k_usd": 0.0,
+      "latency_ms_mean": 0.01841999706812203
+    }
+  ]
+}

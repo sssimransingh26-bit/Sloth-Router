@@ -1,0 +1,62 @@
+{
+  "seed": 20261025,
+  "counts": {
+    "train": 3000,
+    "val": 300,
+    "test": 600,
+    "demo": 3
+  },
+  "balance_target": {
+    "ANSWER": 0.4,
+    "DEFER": 0.35,
+    "ABSTAIN": 0.25
+  },
+  "styles": {
+    "train": [
+      "polite",
+      "terse",
+      "typo",
+      "hinglish"
+    ],
+    "val": [
+      "polite",
+      "terse"
+    ],
+    "test": [
+      "email_formal",
+      "genz",
+      "allcaps",
+      "staccato"
+    ]
+  },
+  "held_out_kb_ids": [
+    "ship_intl",
+    "ret_sale",
+    "size_kids",
+    "pay_cod",
+    "acc_delete"
+  ],
+  "hashes": {
+    "train.jsonl": {
+      "sha256": "a37dcbde8b0e852e4bae7ef02a2670782222f55f764930d0477f2acff35e36ff",
+      "bytes": 1435849
+    },
+    "val.jsonl": {
+      "sha256": "668fa0a12974f0bc6b28029509084ed2154b4ef6a5ffcbbf41954cbbf4a278ac",
+      "bytes": 143367
+    },
+    "test.jsonl": {
+      "sha256": "080aca4e958b48f0866f85741236f38123e752488aa4904cdb8df43082b7e1b1",
+      "bytes": 306371
+    },
+    "demo.jsonl": {
+      "sha256": "2186b555d5d34dc66e1b397a0ba6ca3c423939d716faa2aadda993a3a58ec40f",
+      "bytes": 1450
+    },
+    "kb.json": {
+      "sha256": "afb53ed14821a41f36110106f8591b877b7bf1af145c4aaf427ceb49d23b1781",
+      "bytes": 8923
+    }
+  },
+  "note": "Test styles and five KB entries never appear in training. Gold answers are written before the question is styled."
+}

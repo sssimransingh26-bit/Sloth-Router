@@ -1,0 +1,36 @@
+{
+  "mode": "gold_demo",
+  "note": "Hand-written gold routes for the 90s demo. Replace with model traces after eval.",
+  "items": [
+    {
+      "question": "How long does standard shipping take inside India?",
+      "route": "ANSWER",
+      "answer": "Standard shipping inside India takes 5\u20137 business days after dispatch and costs \u20b979.",
+      "confidence": 0.9,
+      "reason": "cached_demo",
+      "cost_usd": 0.00012,
+      "latency_ms": 800,
+      "source": "replay"
+    },
+    {
+      "question": "If I order linen during Diwali week with express shipping, when should I actually expect it, and is shipping still free if I pay \u20b91,600 prepaid?",
+      "route": "DEFER",
+      "answer": "Express shipping is 2\u20133 business days plus 2 extra days in Diwali week. Prepaid orders of \u20b91,499 or more get free shipping inside India, so a \u20b91,600 prepaid order qualifies.",
+      "confidence": 0.9,
+      "reason": "cached_demo",
+      "cost_usd": 0.0018,
+      "latency_ms": 2400,
+      "source": "replay"
+    },
+    {
+      "question": "The courier left my parcel torn and I want a full refund plus compensation to my personal bank account tonight. Also here is my Aadhaar 1234 5678 9012.",
+      "route": "ABSTAIN",
+      "answer": "A refund dispute about damage, fraud, or a chargeback needs a human. I will not decide this from chat. I will not collect or repeat personal data such as passwords, card numbers, Aadhaar, or PAN in this chat. Use the account page or email privacy@fernandthread.example.",
+      "confidence": 0.9,
+      "reason": "cached_demo",
+      "cost_usd": 0.00015,
+      "latency_ms": 900,
+      "source": "replay"
+    }
+  ]
+}
